@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Postre</title>
+    <link rel="shotrcut icon" href="multimedia/icono.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/inicioes.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!--comienza navegador-->
+        <nav class="navegador border">
+            <h1 class="title">Dulce Postre</h1>
+            <ul class="navegacion">
+                <li class="linav"><a href="index.html">Inicio</a></li>
+                <li class="linav"><a href="pages/quienessomos.html">¿Quienes Somos?</a></li>
+                <li class="linav"><a href="pages/galeria.html">Galeria</a></li>
+                <li class="linav"><a href="pages/postresyrecetas.html">Postres & Recetas</a></li>
+                <li class="linav"><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--termina navegador-->
+        <!--comienza logo-->
+        <div class="logoCentro">
+            <img src="multimedia/icono.png" alt="torta minimalista"class="logo">
+        </div>
+        <!--termina logo-->
+        <!--comienzan articles de arriba-->
+            <!--Comienza articulo quienes somos?-->
+            <article class="quienesSomos border">
+                <h3><a href="pages/quienessomos.html" class="titleBox" data-aos="fade-down">¿ Quienes Somos ?</a></h3>
+                <p class="textoSmall"> 
+                    Somos un local de comida que ademas, enseña sus recetas para que puedas hacerlas en tu casa a tu gusto.
+                    Compartimos la pasteleria para que todos puedan crear sus propios postres dandoles su toque unico. <br>
+                    Y si no tienen tiempo o ganas de hacerlo ustedes, No hay problema! podes pasar por nuestro local y llevar el que mas te guste!
+                    Una gran variedad de postres, frescos, ricos, listos para ser disfrutados. <br>
+                    Nos podes encontrar en <a href="https://www.google.com.ar/maps/place/Belgrano+1940,+Olavarr%C3%ADa,+Provincia+de+Buenos+Aires/@-36.8873957,-60.3311157,17z/data=!3m1!4b1!4m5!3m4!1s0x959445bfc6acf8eb:0xf979e5253d45a255!8m2!3d-36.8874!4d-60.328927" target="_blank">Belgrano 1940,Olavarria</a>.
+                    <br>
+                    Tambien en Nuestras <a href="#redes">Redes Sociales</a> o nos podes dejar un mensaje a nuestro <a href="">Contacto</a>.
+                </p>
+            </article>
+            <!--termina articulo quienes somos?-->
+            <!--comienza articulo galeria-->
+            <article class="galeria border">
+                <h3><a href="pages/galeria.html" class="titleBox" data-aos="fade-down">Galeria</a></h3>
+                <div class="imagenes">
+                    <img src="multimedia/lemonpie2.jpg" alt="lemon pie" class="image">
+                    <img src="multimedia/rogel.jpg" alt="torta rogel" class="image">
+                    <img src="multimedia/tortaselvanegra.jpg" alt="torta selva negra" class="image">
+                </div>    
+            </article>
+            <!--termina articulo galeria-->
+        <!--terminan articilos de arriba-->
+        <!--comienzan articles de abajo-->
+            <!--comienza articulo postres y recetas-->
+            <article class="postresyRecetas border">
+                <h3><a href="pages/postresyrecetas.html" class="titleBox" data-aos="fade-down">Postres & Recetas</a></h3>
+                <div class="recetas">
+                    <div>
+                        <img src="multimedia/tortadefrutilla.jpg" alt="torta de frutilla" class="imagePyR" data-aos="flip-left">
+                        <a href="pages/postresyrecetas.html#tortaDeFrutilla" class="linkReceta"><h4 class="colorWhite"> Receta</h4></a>
+                    </div>
+                    <div>
+                        <img src="multimedia/brownie.jpg" alt="Brownie de chocolate" class="imagePyR" data-aos="flip-right">
+                        <a href="pages/postresyrecetas.html#brownie" class="linkReceta"><h4 class="colorWhite"> Receta</h4></a>
+                    </div>
+                </div>
+            </article>
+            <!--termina articulo postres y recetas-->
+            <!--comienza articulo contacto-->
+            <article class="contacto border">
+                <h3><a href="pages/contacto.html" class="titleBox titleBox--Contact" data-aos="fade-down">Contacto</a></h3>
+                <form action="enviar.php" enctype="text/plain" method="post" class="contactForm">
+                    <input type="text" required name="nombre" placeholder="Nombre"> <br>
+                    <input type="email"required name="email" placeholder="Correo Electronico"> <br>
+                    <input type="ttext"required name="telefono" placeholder="Telefono"> <br> 
+                    <textarea name="Comentarios" required placeholder="Comentario"></textarea> <br> <br>
+                    <button type="submit" name="enviar" value="ENVIAR" class="buttonInd">ENVIAR</button>
+                </form>
+            </article>
+            <!--termina articulo contacto-->
+        <!--terminan articulos de abajo-->
+        <!--comienza footer-->
+        <footer class="foo border">
+            <div class="marginTop" data-aos="fade-down">
+                <strong>Contactenos</strong>
+                <ul class="listFoo listfoo--contact">
+                    <li><img src="multimedia/logotel.png" alt="logo telefono" class="fooImage"> 2284-621969</li>
+                    <li><img src="multimedia/Logomail.png" alt="logo mail" class="fooImage"> felipepirizz@gmail.com</li>
+                    <li><img src="multimedia/logomaps.png" alt="logo maps" class="fooImage"><a href="https://www.google.com.ar/maps/place/Belgrano+1940,+Olavarr%C3%ADa,+Provincia+de+Buenos+Aires/@-36.8873957,-60.3311157,17z/data=!3m1!4b1!4m5!3m4!1s0x959445bfc6acf8eb:0xf979e5253d45a255!8m2!3d-36.8874!4d-60.328927" target="_blank">Belgrano 1940,Olavarria</a></li>
+                </ul>
+            </div>
+            <div class="marginTop" data-aos="fade-down">
+                <strong >Ayuda</strong>
+                <ul class="listFoo listfoo--ayuda">
+                    <li> <img src="multimedia/logocontacto.png" alt="contacto logo" class="fooImage"><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>        
+            <div class="marginTop" data-aos="fade-down"> 
+                <strong >Redes Sociales</strong>
+                <ul class="listFoo listfoo--redes">
+                    <li><img src="multimedia/logoig.png" alt="instagram logo" class="fooImage"><a href="https://www.instagram.com/?hl=es-la" target="_blank">Instagram</a></li>
+                    <li><img src="multimedia/logofb.png" alt="facebook logo" class="fooImage"><a href="https://www.facebook.com/felipe.piriz.7/" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!--termina footer-->
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
