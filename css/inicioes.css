@@ -107,6 +107,15 @@ para trabajar con distitntas resoluciones se utiliza:
         nube donde vamos a guardar nuestro codigo, y los commits y versiones.
         git pull: para traer cambios que hicimos en github.
         git push: para enviar los cambios desde VSC a github.
+    BOOTSTRAP
+    sirve para maquetar y es responsive.
+    son 12 filas.
+    dimensione: breakpoints
+        <576 col-xs
+        >576 col-sm
+        >768 col-md
+        >992 col-lg
+        >1200 col-xl
 */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
@@ -121,118 +130,64 @@ para trabajar con distitntas resoluciones se utiliza:
 body{
   background-color: #A64D79;
 }
-
-.contenedor{
-  display: grid;
+.navbar{
+  background-color: #D5A6BD !important;
 }
-.contenedorQuienesSomos{
-  display: grid;
+.title{
+  color: white !important;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
-.contenedorContacto{
-  display: grid;
+.navChanges{
+  padding-left: 15px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
 }
-.contenedorPostresyRecetas{
-  display: grid;
+.logoConteiner{
+  height: 700px;
+}
+.logo{
+  margin-top: 50px;
+  height: 600px;
+}
+.container{
+  height: 500px ;
+  background-color: #D5A6BD;
 }
 .border{
-  border: 1px solid black;
+  border: 1px solid black !important;
 }
-p{
-  color: black;
-}
-a{
+.titleBox{
   text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: #A64D79;
-}
-/* comienza el nav*/
-
-.navegador{
-  width: 100%;
-  background-color: #D5A6BD;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.title{ 
   color: white;
   font-family: 'Indie Flower', cursive;
-  font-style: italic;
-  justify-content: flex-start;
+  font-size: 40px;
+  font-weight: 500;
 }
-.navegacion{
-  background-color: white;
-  font-style: italic;
-  color: black;
-  border: 2px solid black;
-  justify-content: flex-end;
-}
-.linav{
-  font-weight: bold;
-  font-family: 'Cormorant Garamond', serif;
-  display: inline-block;
-}
-/*termina el nav*/
-
-/*comienza logo*/
-.logoCentro{
-  text-align: center;
-}
-/*termina logo*/
-
-/*comienzan articles de arriba*/
-/*articulo de quienes somos*/
-.quienesSomos{
-  background-color: #D5A6BD;
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  text-align: center;
-}
-
-.titleBox{
-  display: inline-block;
-  color: white;
-  font-family: 'Indie Flower', cursive; 
-}
-
-.textoSmall{
-  color: black;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: bold;
-}
-
-.quienesSomos p a {
+.titleBox:hover{
   color: #A64D79;
-  display: inline-block;
 }
-.quienesSomos p a:hover{
+.textoSmall{
+  margin-top: 75px;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+.textoSmall a{
+  color: #A64D79;
+  text-decoration: none;
+}
+.textoSmall a:hover{
   color: white;
-}
-/*termina articulo de quienes somos*/
-/*comienza articulo de galeria*/
-.galeria{  
-  background-color: #D5A6BD;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.imagenes{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-  flex-wrap: wrap;
 }
 .image{
-  border: 4px groove grey;
+  height: 350px;
+  width: auto;
+  border: 5px groove grey;
 }
-/*terminan articles arriba*/
-/*termina articulo de galeria*/
-/*comienza articles de abajo*/ 
+.carousel{
+  padding-left: 100px;
+}
 /*comienza postres y recetas*/
 .postresyRecetas{
   background-color: #D5A6BD;
@@ -250,20 +205,24 @@ a:hover {
 }
 .imagePyR{
   border: 5px groove grey;
+  height: 250px;
+  width: auto;
+  margin-top: 20px;
+
 }
 .linkReceta{
   display: block;
   padding: 10px 30px 10px 30px;
 	background-color: #A64D79;
   font-family: "Roboto", sans-serif;
-}
-.colorWhite{
-  color: white;
+  text-decoration: none;
 }
 .linkReceta:hover{
   background-color: #6a0c3b;
 }
-
+.colorWhite{
+  color: white;
+}
 /*termina postres y recetas*/
 /*comienza articulo contacto*/
 .contacto{
@@ -275,8 +234,11 @@ a:hover {
 
 form input,form textarea{
   font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
   border: none;
   resize: none; 
+  margin-top: 10px;
+  padding: 5px; 
 }
 form button {
   padding: 10px 30px 10px 30px;
@@ -287,10 +249,15 @@ form button {
 form button:hover{
   background-color: #6a0c3b;
 }
+
 /*termina articulo contacto*/
-/*terminan articles de abajo*/
 /*comienza footer*/
+.containerFoo{
+  height: 300px;
+
+}
 .foo{
+  padding-top: 30px;
   display: flex;
   flex-direction:row;
   justify-content: space-evenly;
@@ -298,10 +265,12 @@ form button:hover{
 
 strong {
   color: white;
+  font-size: 30px;
   font-family: 'Indie Flower', cursive;
 }
 
 .listFoo {
+  margin-top: 20px;
   list-style: none;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
@@ -313,21 +282,24 @@ strong {
 
 footer div li a {
   color: white;
+  text-decoration: none;
 }
 footer div li a:hover {
   color: #D5A6BD;
 }
-
+.fooImage{
+  height: 15px;
+}
 /*termina footer*/
-
-/*------------------------------------Comienza Media------------------------------------------------------------------------------------------*/
-/*----------------------COMIENZA MEDIA DESDE 318PX A  480PX-------------------------------------------------------------------------------*/
+/*
+*------------------------------------Comienza Media------------------------------------------------------------------------------------------*
+/*----------------------COMIENZA MEDIA DESDE 318PX A  480PX-------------------------------------------------------------------------------*
 @media only screen and (min-width:318px) and (max-width:480px) {
   .contenedor{
     grid-template-columns: 1fr;
     grid-template-rows: 100px 450px 600px 650px 500px ;
   }
-  /*comienza nav*/
+  /*comienza nav*
   .navegador{
     grid-column: 1/5;
     grid-row: 1/2;
@@ -347,7 +319,7 @@ footer div li a:hover {
     font-size: 12px;
   }
   /*termina nav*/
-  /*comienza logo*/
+  /*comienza logo*
   .logoCentro{
     grid-column: 1/5;
     grid-row: 2/3;
@@ -359,7 +331,7 @@ footer div li a:hover {
   }
   /*termina logo*/
   /*comienzan articles de arriba*/
-  /*articulo de quienes somos*/
+  /*articulo de quienes somos*
   .quienesSomos{
     grid-column: 1/2;
     grid-row: 3/4;
@@ -375,14 +347,14 @@ footer div li a:hover {
     font-size: 16px;
   }
   /*termina articulo de quienes somos*/
-  /*comeienza arituclo galeria*/
+  /*comeienza arituclo galeria*
   .galeria{
     display: none;
   }
   /*termina articulo galeria*/
   /*termina articles de arriba*/
   /*comienza articulos de abajo*/
-  /*comienza articulo postres y recetas*/  
+  /*comienza articulo postres y recetas*
   .postresyRecetas{
     grid-column: 1/3;
     grid-row: 4/5;
@@ -404,13 +376,13 @@ footer div li a:hover {
     margin-left: 97px;
   }
   /*termina articulo postres y recetas*/
-  /*comienza articulo contacto*/
+  /*comienza articulo contacto*
   .contacto{
     display: none;
   }
   /*termina articulo contacto*/
   /*termina articulos de abajo*/
-  /*comienza footer*/
+  /*comienza footer*
   .foo{
     grid-column: 1/4;
     grid-row: 5/6;
@@ -444,7 +416,7 @@ footer div li a:hover {
   .listfoo--ayuda{
     margin: 5px 5px 5px 30px;
   }
-       /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*/
+       /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*
        .contenedorQuienesSomos{
         grid-template-rows:100px 400px 600px 600px 400px 500px;
         grid-template-columns: 1fr;
@@ -453,7 +425,7 @@ footer div li a:hover {
         grid-column: 1fr;
         grid-row: 1/2;
       }
-      /*comienza titulo de la pagina*/
+      /*comienza titulo de la pagina*
       .tituloPags{
         grid-column: 1fr;
         grid-row:2/3;
@@ -464,7 +436,7 @@ footer div li a:hover {
         padding-top: 170px;
       }
       /*termina titulo de la pagina*/
-      /*comienza articulo que hacemos*/
+      /*comienza articulo que hacemos*
       .queHacemos{
         grid-column: 1fr;
         grid-row:3/4;
@@ -501,7 +473,7 @@ footer div li a:hover {
         border: 5px groove grey;
       }
       /*termina articulo que hacemos*/
-      /*comienza articulo porque lo hacemos*/
+      /*comienza articulo porque lo hacemos*
       .porqueLoHacemos{
         grid-column: 1fr;
         grid-row:4/5;
@@ -511,7 +483,7 @@ footer div li a:hover {
         justify-content: space-around;
       }
       /*termina articulo porque lo hacemos*/
-      /*comienza articulo les aseguramos*/
+      /*comienza articulo les aseguramos*
       .lesAseguramos{
       grid-column: 1fr;
       grid-row:5/6;
@@ -541,21 +513,21 @@ footer div li a:hover {
         margin-bottom: 20px;
         color: #6a0c3b;
       }
-      /*termina articulo les aseguramos*/
+      /*termina articulo les aseguramos*
     .foo--PyR{
       grid-column: 1fr;
       grid-row: 6/7;
     }
-    /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
+    /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*
 }
-/*----------------------COMIENZA MEDIA 480PX A 703PX---------------------------------------------------------------------------------------*/
+/*----------------------COMIENZA MEDIA 480PX A 703PX---------------------------------------------------------------------------------------*
 @media only screen and (min-width:480px) and (max-width:703px) {
-      /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*/
+      /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*
   .contenedor{
     grid-template-columns: 1fr;
     grid-template-rows: 100px 600px 600px 800px 500px ;
   }
-    /*comienza nav*/
+    /*comienza nav*
     .navegador{
       grid-column: 1/5;
       grid-row: 1/2;
@@ -575,7 +547,7 @@ footer div li a:hover {
       font-size: 12px;
     }
     /*termina nav*/
-  /*comienza logo*/
+  /*comienza logo*
   .logoCentro{
     grid-column: 1/5;
     grid-row: 2/3;
@@ -587,7 +559,7 @@ footer div li a:hover {
   }
   /*termina logo*/
   /*comienzan articles de arriba*/
-  /*articulo de quienes somos*/
+  /*articulo de quienes somos*
   .quienesSomos{
     grid-column: 1/2;
     grid-row: 3/4;
@@ -603,14 +575,14 @@ footer div li a:hover {
     font-size: 18px;
   }
   /*termina articulo de quienes somos*/
-  /*comeienza arituclo galeria*/
+  /*comeienza arituclo galeria*
   .galeria{
     display: none;
   }
   /*termina articulo galeria*/
   /*termina articles de arriba*/
   /*comienza articulos de abajo*/
-  /*comienza articulo postres y recetas*/  
+  /*comienza articulo postres y recetas*
   .postresyRecetas{
     grid-column: 1/3;
     grid-row: 4/5;
@@ -632,13 +604,13 @@ footer div li a:hover {
     margin-left: 97px;
   }
   /*termina articulo postres y recetas*/
-  /*comienza articulo contacto*/
+  /*comienza articulo contacto*
   .contacto{
     display: none;
   }
   /*termina articulo contacto*/
   /*termina articulos de abajo*/
-  /*comienza footer*/
+  /*comienza footer*
   .foo{
     grid-column: 1/4;
     grid-row: 5/6;
@@ -673,7 +645,7 @@ footer div li a:hover {
     margin: 5px 5px 5px 30px;
   }
   /*-----------------------------------------TERMINA PAGINA INICIO--------------------------------------------------------------------------------------------*/
-     /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*/
+     /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*
      .contenedorQuienesSomos{
       grid-template-rows:100px 400px 600px 600px 400px 500px;
       grid-template-columns: 1fr;
@@ -682,7 +654,7 @@ footer div li a:hover {
       grid-column: 1fr;
       grid-row: 1/2;
     }
-    /*comienza titulo de la pagina*/
+    /*comienza titulo de la pagina*
     .tituloPags{
       grid-column: 1fr;
       grid-row:2/3;
@@ -692,7 +664,7 @@ footer div li a:hover {
       padding-top: 170px;
     }
     /*termina titulo de la pagina*/
-    /*comienza articulo que hacemos*/
+    /*comienza articulo que hacemos*
     .queHacemos{
       grid-column: 1fr;
       grid-row:3/4;
@@ -730,7 +702,7 @@ footer div li a:hover {
       border: 5px groove grey;
     }
     /*termina articulo que hacemos*/
-    /*comienza articulo porque lo hacemos*/
+    /*comienza articulo porque lo hacemos*
     .porqueLoHacemos{
       grid-column: 1fr;
       grid-row:4/5;
@@ -740,7 +712,7 @@ footer div li a:hover {
       justify-content: space-around;
     }
     /*termina articulo porque lo hacemos*/
-    /*comienza articulo les aseguramos*/
+    /*comienza articulo les aseguramos*
     .lesAseguramos{
     grid-column: 1fr;
     grid-row:5/6;
@@ -770,21 +742,20 @@ footer div li a:hover {
       margin-bottom: 20px;
       color: #6a0c3b;
     }
-    /*termina articulo les aseguramos*/
+    /*termina articulo les aseguramos*
   .foo--PyR{
     grid-column: 1fr;
     grid-row: 6/7;
   }
-  /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*
 }
-/*----------------------Media 704px a 1199px--------------------------------------------------------------------------------------------*/
-@media only screen and (min-width:704px) and (max-width:1199px) {
-    /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*/
+/*----------------------Media 704px a 1199px--------------------------------------------------------------------------------------------*
+@media only screen and (min-width:704px) and (max-width:1199px) 
+    /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*
   .contenedor{
     grid-template-columns: 1fr;
     grid-template-rows: 100px 700px 500px 500px 300px ;
   }
-  /*comienza nav*/
   .navegador{
     grid-column: 1/5;
     grid-row: 1/2;
@@ -802,7 +773,7 @@ footer div li a:hover {
     font-size: 14px;
   }
   /*termina nav*/
-  /*comienza logo*/
+  /*comienza logo*
   .logoCentro{
     grid-column: 1/5;
     grid-row: 2/3;
@@ -812,7 +783,7 @@ footer div li a:hover {
   }
   /*termina logo*/
   /*comienzan articles de arriba*/
-  /*articulo de quienes somos*/
+  /*articulo de quienes somos*
   .quienesSomos{
     grid-column: 1/2;
     grid-row: 3/4;
@@ -828,14 +799,14 @@ footer div li a:hover {
     font-size: 18px;
   }
   /*termina articulo de quienes somos*/
-  /*comeienza arituclo galeria*/
+  /*comeienza arituclo galeria*
   .galeria{
     display: none;
   }
   /*termina articulo galeria*/
   /*termina articles de arriba*/
   /*comienza articulos de abajo*/
-  /*comienza articulo postres y recetas*/  
+  /*comienza articulo postres y recetas*
   .postresyRecetas{
     grid-column: 1/2;
     grid-row: 4/5;
@@ -851,13 +822,13 @@ footer div li a:hover {
     margin-left: 97px;
   }
   /*termina articulo postres y recetas*/
-  /*comienza articulo contacto*/
+  /*comienza articulo contacto*
   .contacto{
     display: none;
   }
   /*termina articulo contacto*/
   /*termina articulos de abajo*/
-  /*comienza footer*/
+  /*comienza footer*
   .foo{
     grid-column: 1/2;
     grid-row: 5/6;
@@ -887,7 +858,7 @@ footer div li a:hover {
   }
   /*comienza footer*/
     /*---------------------------------TERMINA PAGINA INICIO----------------------------------------------------------------------------------------------------*/
-    /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*/
+    /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*
   .contenedorQuienesSomos{
     grid-template-rows:100px 400px 500px 500px 400px 300px;
     grid-template-columns: 1fr;
@@ -896,7 +867,7 @@ footer div li a:hover {
     grid-column: 1fr;
     grid-row: 1/2;
   }
-  /*comienza titulo de la pagina*/
+  /*comienza titulo de la pagina*
   .tituloPags{
     grid-column: 1fr;
     grid-row:2/3;
@@ -906,7 +877,7 @@ footer div li a:hover {
     padding-top: 170px;
   }
   /*termina titulo de la pagina*/
-  /*comienza articulo que hacemos*/
+  /*comienza articulo que hacemos
   .queHacemos{
     grid-column: 1fr;
     grid-row:3/4;
@@ -942,7 +913,7 @@ footer div li a:hover {
     border: 5px groove grey;
   }
   /*termina articulo que hacemos*/
-  /*comienza articulo porque lo hacemos*/
+  /*comienza articulo porque lo hacemos*
   .porqueLoHacemos{
     grid-column: 1fr;
     grid-row:4/5;
@@ -952,7 +923,7 @@ footer div li a:hover {
     justify-content: space-around;
   }
   /*termina articulo porque lo hacemos*/
-  /*comienza articulo les aseguramos*/
+  /*comienza articulo les aseguramos*
   .lesAseguramos{
   grid-column: 1fr;
   grid-row:5/6;
@@ -982,21 +953,21 @@ footer div li a:hover {
     margin-bottom: 20px;
     color: #6a0c3b;
   }
-  /*termina articulo les aseguramos*/
+  /*termina articulo les aseguramos*
 .foo--PyR{
   grid-column: 1fr;
   grid-row: 6/7;
+
+/*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*
 }
-/*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
-}
-/*----------------------Media 1200px--------------------------------------------------------------------------------------------------------*/
-  /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*/
+/*----------------------Media 1200px--------------------------------------------------------------------------------------------------------*
+  /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*
 @media only screen and (min-width:1200px) and (max-width:1450px) {
   .contenedor{
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 100px 700px 500px 500px 300px ;
   }
-  /*comienza nav*/
+  /*comienza nav*
   .navegador{
     grid-column: 1/5;
     grid-row: 1/2;
@@ -1013,7 +984,7 @@ footer div li a:hover {
     padding: 1px 17px 1px 17px;
   }
   /*termina nav*/
-  /*comienza logo*/
+  /*comienza logo*
   .logoCentro{
     grid-column: 1/5;
     grid-row: 2/3;
@@ -1023,7 +994,7 @@ footer div li a:hover {
   }
   /*termina logo*/
   /*comienzan articles de arriba*/
-  /*articulo de quienes somos*/
+  /*articulo de quienes somos*
   .quienesSomos{
     grid-column: 1/2;
     grid-row: 3/4;
@@ -1039,7 +1010,7 @@ footer div li a:hover {
     font-size: 18px;
   }
   /*termina articulo de quienes somos*/
-  /*comeienza arituclo galeria*/
+  /*comeienza arituclo galeria*
   .galeria{
     grid-column: 2/4;
     grid-row: 3/4;
@@ -1062,7 +1033,7 @@ footer div li a:hover {
   /*termina articulo galeria*/
   /*termina articles de arriba*/
   /*comienza articulos de abajo*/
-  /*comienza articulo postres y recetas*/  
+  /*comienza articulo postres y recetas*
   .postresyRecetas{
     grid-column: 1/3;
     grid-row: 4/5;
@@ -1085,7 +1056,7 @@ footer div li a:hover {
   }
 
   /*termina articulo postres y recetas*/
-  /*comienza articulo contacto*/
+  /*comienza articulo contacto*
   .contacto{
     grid-column: 3/4;
     grid-row: 4/5;
@@ -1102,7 +1073,7 @@ footer div li a:hover {
   }
   /*termina articulo contacto*/
   /*termina articulos de abajo*/
-  /*comienza footer*/
+  /*comienza footer*
   .foo{
     grid-column: 1/4;
     grid-row: 5/6;
@@ -1132,7 +1103,7 @@ footer div li a:hover {
   }
   /*comienza footer*/
   /*---------------------------------TERMINA PAGINA INICIO----------------------------------------------------------------------------------------------------*/
-  /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*/
+  /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*
   .contenedorQuienesSomos{
     grid-template-rows:100px 400px 500px 500px 400px 300px;
     grid-template-columns: 1fr;
@@ -1141,7 +1112,7 @@ footer div li a:hover {
     grid-column: 1fr;
     grid-row: 1/2;
   }
-  /*comienza titulo de la pagina*/
+  /*comienza titulo de la pagina*
   .tituloPags{
     grid-column: 1fr;
     grid-row:2/3;
@@ -1151,7 +1122,7 @@ footer div li a:hover {
     padding-top: 170px;
   }
   /*termina titulo de la pagina*/
-  /*comienza articulo que hacemos*/
+  /*comienza articulo que hacemos*
   .queHacemos{
     grid-column: 1fr;
     grid-row:3/4;
@@ -1185,7 +1156,7 @@ footer div li a:hover {
     border: 5px groove grey;
   }
   /*termina articulo que hacemos*/
-  /*comienza articulo porque lo hacemos*/
+  /*comienza articulo porque lo hacemos*
   .porqueLoHacemos{
     grid-column: 1fr;
     grid-row:4/5;
@@ -1195,7 +1166,7 @@ footer div li a:hover {
     justify-content: space-around;
   }
   /*termina articulo porque lo hacemos*/
-  /*comienza articulo les aseguramos*/
+  /*comienza articulo les aseguramos*
   .lesAseguramos{
   grid-column: 1fr;
   grid-row:5/6;
@@ -1224,21 +1195,21 @@ footer div li a:hover {
     margin-bottom: 20px;
     color: #6a0c3b;
   }
-  /*termina articulo les aseguramos*/
+  /*termina articulo les aseguramos*
 .foo--PyR{
   grid-column: 1fr;
   grid-row: 6/7;
 }
-/*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*
 }
-/*----------------------------------MEDIA 1451PX A 1888PX------------------------------------------------------------------------------------*/
+/*----------------------------------MEDIA 1451PX A 1888PX------------------------------------------------------------------------------------*
 @media only screen and (min-width:1451px) and (max-width:1888px) {
-  /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*/
+  /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*
   .contenedor{
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 100px 700px 500px 500px 300px ;
   }
-  /*comienza nav*/
+  /*comienza nav*
   .navegador{
     grid-column: 1/5;
     grid-row: 1/2;
@@ -1255,7 +1226,7 @@ footer div li a:hover {
     padding: 1px 17px 1px 17px;
   }
   /*termina nav*/
-  /*comienza logo*/
+  /*comienza logo*
   .logoCentro{
     grid-column: 1/5;
     grid-row: 2/3;
@@ -1265,7 +1236,7 @@ footer div li a:hover {
   }
   /*termina logo*/
   /*comienzan articles de arriba*/
-  /*articulo de quienes somos*/
+  /*articulo de quienes somos*
   .quienesSomos{
     grid-column: 1/2;
     grid-row: 3/4;
@@ -1280,7 +1251,7 @@ footer div li a:hover {
     line-height: 30px;
     font-size: 18px;
   }
-  /*termina articulo de quienes somos*/
+  /*termina articulo de quienes somos*
   .galeria{
     grid-column: 2/4;
     grid-row: 3/4;
@@ -1297,7 +1268,7 @@ footer div li a:hover {
     width: auto; 
     margin-top: 50px;
   }
-  /*termina articles de arriba*/  
+  /*termina articles de arriba*
   .postresyRecetas{
     grid-column: 1/3;
     grid-row: 4/5;
@@ -1312,7 +1283,7 @@ footer div li a:hover {
     margin-right: 140px;
     margin-left: 140px;
   }
-/*comienza articulo contacto*/
+/*comienza articulo contacto*
 .contacto{
   grid-column: 3/4;
   grid-row: 4/5;
@@ -1329,7 +1300,7 @@ form button {
 }
 /*termina articulo contacto*/
 /*termina articulos de abajo*/
-/*comienza footer*/
+/*comienza footer
 .foo{
   grid-column: 1/4;
   grid-row: 5/6;
@@ -1358,8 +1329,8 @@ strong {
   margin: 20px 0px 20px 0px;
 }
 /*termina footer*/
-  /*---------------------------------TERMINA PAGINA INICIO----------------------------------------------------------------------------------------------------*/
-  /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*/
+  /*---------------------------------TERMINA PAGINA INICIO----------------------------------------------------------------------------------------------------*
+  /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*
   .contenedorQuienesSomos{
     grid-template-rows:100px 400px 500px 500px 400px 300px;
     grid-template-columns: 1fr;
@@ -1368,7 +1339,7 @@ strong {
     grid-column: 1fr;
     grid-row: 1/2;
   }
-  /*comienza titulo de la pagina*/
+  /*comienza titulo de la pagina*
   .tituloPags{
     grid-column: 1fr;
     grid-row:2/3;
@@ -1378,7 +1349,7 @@ strong {
     padding-top: 170px;
   }
   /*termina titulo de la pagina*/
-  /*comienza articulo que hacemos*/
+  /*comienza articulo que hacemos*
   .queHacemos{
     grid-column: 1fr;
     grid-row:3/4;
@@ -1412,7 +1383,7 @@ strong {
     border: 5px groove grey;
   }
   /*termina articulo que hacemos*/
-  /*comienza articulo porque lo hacemos*/
+  /*comienza articulo porque lo hacemos*
   .porqueLoHacemos{
     grid-column: 1fr;
     grid-row:4/5;
@@ -1422,7 +1393,7 @@ strong {
     justify-content: space-around;
   }
   /*termina articulo porque lo hacemos*/
-  /*comienza articulo les aseguramos*/
+  /*comienza articulo les aseguramos*
   .lesAseguramos{
   grid-column: 1fr;
   grid-row:5/6;
@@ -1452,22 +1423,22 @@ strong {
     color: #6a0c3b;
   }
   /*termina articulo les aseguramos*/
-  /*comienza foo*/
+  /*comienza foo*
 .foo--PyR{
   grid-column: 1fr;
   grid-row: 6/7;
 }
 /*termina foo*/
-/*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*
 }
-/*---------------------------------------------MEDIA 1889PX---------------------------------------------------------------------------------------*/
+/*---------------------------------------------MEDIA 1889PX---------------------------------------------------------------------------------------*
 @media only screen and (min-width:1889px) {
-  /*------------------------COMIENZA PAGINA INICIO------------------------------------------------------------------*/
+  /*------------------------COMIENZA PAGINA INICIO------------------------------------------------------------------*
     .contenedor{
       grid-template-columns: 2fr 1fr 2fr;
       grid-template-rows: 100px 700px 500px 500px 300px ;
     }
-    /*comienza nav*/
+    /*comienza nav*
     .navegador{
       grid-column: 1/5;
       grid-row: 1/2;
@@ -1484,7 +1455,7 @@ strong {
       padding: 1px 17px 1px 17px;
     }
     /*termina nav*/
-    /*comienza logo*/
+    /*comienza logo*
     .logoCentro{
       grid-column: 1/5;
       grid-row: 2/3;
@@ -1494,7 +1465,7 @@ strong {
     }
     /*termina logo*/
     /*comienzan articles de arriba*/
-    /*articulo de quienes somos*/
+    /*articulo de quienes somos*
     .quienesSomos{
       grid-column: 1/2;
       grid-row: 3/4;
@@ -1509,7 +1480,7 @@ strong {
       line-height: 30px;
       font-size: 18px;
     }
-    /*termina articulo de quienes somos*/
+    /*termina articulo de quienes somos*
     .galeria{
       grid-column: 2/4;
       grid-row: 3/4;
@@ -1526,7 +1497,7 @@ strong {
       width: auto;
       margin-top: 20px;
     }
-    /*termina articles de arriba*/  
+    /*termina articles de arriba*
     .postresyRecetas{
       grid-column: 1/3;
       grid-row: 4/5;
@@ -1541,7 +1512,7 @@ strong {
       margin-right: 200px;
       margin-left: 200px;
     }
-  /*comienza articulo contacto*/
+  /*comienza articulo contacto*
   .contacto{
     grid-column: 3/4;
     grid-row: 4/5;
@@ -1558,7 +1529,7 @@ strong {
   }
   /*termina articulo contacto*/
   /*termina articulos de abajo*/
-  /*comienza footer*/
+  /*comienza footer*
   .foo{
     grid-column: 1/4;
     grid-row: 5/6;
@@ -1586,14 +1557,14 @@ strong {
   .listfoo--ayuda{
     margin: 20px 0px 20px 0px;
   }
-  /*termina footer*/
+  /*termina footer*
   /*---------------------------------TERMINA PAGINA INICIO----------------------------------------------------------------------------------------------------*/
-  /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*/
+  /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*
   .contenedorQuienesSomos{
     grid-template-rows:100px 300px 500px 500px 400px 300px;
     grid-template-columns: 1fr;
   }
-  /*comienza titulo de la pagina*/
+  /*comienza titulo de la pagina*
   .tituloPags{
     grid-column: 1fr;
     grid-row:2/3;
@@ -1603,7 +1574,7 @@ strong {
     padding-top: 170px;
   }
   /*termina titulo de la pagina*/
-  /*comienza articulo que hacemos*/
+  /*comienza articulo que hacemos*
   .queHacemos{
     grid-column: 1fr;
     grid-row:3/4;
@@ -1637,7 +1608,7 @@ strong {
     border: 5px groove grey;
   }
   /*termina articulo que hacemos*/
-  /*comienza articulo porque lo hacemos*/
+  /*comienza articulo porque lo hacemos*
   .porqueLoHacemos{
     grid-column: 1fr;
     grid-row:4/5;
@@ -1647,7 +1618,7 @@ strong {
     justify-content: space-around;
   }
   /*termina articulo porque lo hacemos*/
-  /*comienza articulo les aseguramos*/
+  /*comienza articulo les aseguramos*
   .lesAseguramos{
   grid-column: 1fr;
   grid-row:5/6;
@@ -1676,13 +1647,13 @@ strong {
     margin-bottom: 20px;
     color: #6a0c3b;
   }
-  /*termina articulo les aseguramos*/
+  /*termina articulo les aseguramos*
   .foo--PyR{
     grid-column: 1fr;
     grid-row: 6/7;
   }
   /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
-  /*comienza pagina postresyrecetas*/
+   /*--------------------------------------------------------------------------------------COMIENZA PAGINA POSTRES Y RECETAS-----------------------------------------------------------------------------------------------------------*
   .contenedorPostresyRecetas{
     grid-template-columns: 1fr;
     grid-template-rows: 100px 400px 650px 650px 650px 300px;
@@ -1775,8 +1746,8 @@ margin-bottom: 25px;
   grid-column: 1fr;
   grid-row: 6/7;
 }
-/*termina pagina postresyrecetas*/
-  /*-----------------------------------------------COMIENZA PAGINA CONTACTO---------------------------------------------------------------------*/
+/*--------------------------------------------------TERMINA PAGINA POSTRES Y RECETAS----------------------------------------------------------------------------------------------*/
+  /*-----------------------------------------------COMIENZA PAGINA CONTACTO---------------------------------------------------------------------*
   .contenedorContacto{
     grid-template-rows:100px 300px 500px 300px;
     grid-template-columns: 1fr; 
@@ -1814,5 +1785,6 @@ margin-bottom: 25px;
     grid-row: 4/5;
     grid-column: 1fr;
   }
-  /*-----------------------------------------------TERMINA PAGINA CONTACTO---------------------------------------------------------------------*/
+  /*-----------------------------------------------TERMINA PAGINA CONTACTO---------------------------------------------------------------------*
 }
+*/
