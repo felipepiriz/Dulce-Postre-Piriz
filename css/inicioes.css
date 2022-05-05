@@ -134,8 +134,11 @@ body{
 .contenedorPostresyRecetas{
   display: grid;
 }
+.contenedorGaleria{
+  display: grid;
+}
 .border{
-  border: 1px solid black;
+  border: 1px solid black !important;
 }
 p{
   color: black;
@@ -148,32 +151,24 @@ a{
 a:hover {
   color: #A64D79;
 }
+.listPre, .textoSmall--PyR{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+}
 /* comienza el nav*/
-
-.navegador{
-  width: 100%;
-  background-color: #D5A6BD;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.navbar{
+  background-color: #D5A6BD !important;
 }
 .title{ 
-  color: white;
+  color: white !important;
   font-family: 'Indie Flower', cursive;
   font-style: italic;
   justify-content: flex-start;
 }
-.navegacion{
-  background-color: white;
-  font-style: italic;
-  color: black;
-  border: 2px solid black;
-  justify-content: flex-end;
-}
-.linav{
+.navbar li{
   font-weight: bold;
   font-family: 'Cormorant Garamond', serif;
-  display: inline-block;
+  padding: 8px;
 }
 /*termina el nav*/
 
@@ -220,15 +215,9 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
 }
-.imagenes{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-  flex-wrap: wrap;
-}
-.image{
-  border: 4px groove grey;
+
+.imgGaleria{
+  border: 5px groove grey;
 }
 /*terminan articles arriba*/
 /*termina articulo de galeria*/
@@ -440,13 +429,13 @@ footer div li a:hover {
   .listfoo--redes{
     margin: 5px 5px 5px 30px;
  }
-    
+
   .listfoo--ayuda{
     margin: 5px 5px 5px 30px;
   }
        /*---------------------------------COMIENZA PAGINA QUIENES SOMOS--------------------------------------------------------------------------------------------*/
        .contenedorQuienesSomos{
-        grid-template-rows:100px 400px 600px 600px 400px 500px;
+        grid-template-rows:100px 400px 700px 700px 400px 500px;
         grid-template-columns: 1fr;
       }
       .navegador{
@@ -474,6 +463,10 @@ footer div li a:hover {
         justify-content: space-evenly;
       }
       .TitleAndImagePyR{
+        margin-top: 10px;
+        text-align: center;
+      }
+      .TitleAndImagePyRUnder{
         margin-top: 10px;
         text-align: center;
       }
@@ -528,16 +521,19 @@ footer div li a:hover {
       }
       .listPyR{
         margin-top: 70px;
+        padding: 5px;
         list-style-type:none;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         text-align: center;
         color: white;
+      }
+      .listPyR h4{
         font-size: 18px;
       }
       .listPyR i{
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 20px;
         color: #6a0c3b;
       }
@@ -547,7 +543,144 @@ footer div li a:hover {
       grid-row: 6/7;
     }
     /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
-}
+        /*--------------------------------------------------------------------------------comienza pagina postresyrecetas--------------------------------------------------------------------------------------------------------------*/
+        .contenedorPostresyRecetas{
+          grid-template-columns: 1fr;
+          grid-template-rows: 100px 400px 1300px 1300px 1400px 550px;
+        }
+      .receta1{
+        grid-column: 1/2;
+        grid-row: 3/4;  
+      }
+      .receta2{
+        grid-column: 1/2;
+        grid-row: 4/5;
+      }
+      .receta3{
+        grid-column: 1/2;
+        grid-row: 5/6;
+      }
+      .flexcontainer{
+        background-color:#D5A6BD;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        }
+      .imageAndTitle{
+      margin-top: 50px;
+      }
+      .imageTorta{
+        width: 400px;
+        height: 250px;
+        border: 5px grey groove;
+        display: inline-block;
+      }
+      .titleTorta{
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        font-size: 30px;
+      }
+      .titleTorta--brownie{
+        margin-left: 140px;
+      }
+      
+      .ingredientes{
+        margin-top: 50px;
+        border: 5px groove black;
+        background-color:#A64D79;
+        display: inline-block;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+      }
+      .titleIng{
+        font-family:'Indie Flower', cursive;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      
+      .listIng{
+        color: white;
+        text-align: center;
+        list-style-type: none;
+        margin-top: 40px;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 13px;
+        font-weight: 500;
+        margin-right: 30px;
+      }
+      .preparacion{
+        display: inline-block;
+        width: 500px;
+        margin-top: 50px;
+      }
+      .titlePre{
+      font-family:'Indie Flower', cursive;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 25px;
+      }
+      
+      .listPre {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: bold;
+        line-height: 25px;
+        font-size: 20px;
+      }
+      .foo-postresyRecetas{
+        grid-column: 1fr;
+        grid-row: 6/7;
+      }
+      /*------------------------------------------------termina pagina postresyrecetas--------------------------------------------------------------------------------------------------------------------*/
+          /*-----------------------------------------------COMIENZA PAGINA CONTACTO---------------------------------------------------------------------*/
+    .contenedorContacto{
+      grid-template-rows:100px 300px 500px 500px;
+      grid-template-columns: 1fr; 
+    }
+    .formularioContacto{
+      grid-row: 3/4;
+      grid-column: 1fr; 
+    }
+    .border--contact{
+      border-bottom: 0px;
+    }
+    .formularioContacto{
+      text-align: center;
+      justify-content: center;
+    }
+    .formularioContacto input{
+      background-color: #D5A6BD;
+      color: black;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-family: 'Cormorant Garamond', serif;
+      height: 40px;
+      width: 200px;
+      margin-top: 10px;
+    }
+    .formularioContacto textarea{
+      background-color: #D5A6BD;
+      color: black;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-family: 'Cormorant Garamond', serif;
+      margin-top: 10px;
+      width: 200px;
+      height: 150px;
+    }
+    .foo--contacto{
+      grid-row: 4/5;
+      grid-column: 1fr;
+    }
+    /*-----------------------------------------------TERMINA PAGINA CONTACTO---------------------------------------------------------------------*/
+  }
 /*----------------------COMIENZA MEDIA 480PX A 703PX---------------------------------------------------------------------------------------*/
 @media only screen and (min-width:480px) and (max-width:703px) {
       /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*/
@@ -668,7 +801,7 @@ footer div li a:hover {
   .listfoo--redes{
     margin: 5px 5px 5px 30px;
  }
-    
+
   .listfoo--ayuda{
     margin: 5px 5px 5px 30px;
   }
@@ -703,19 +836,23 @@ footer div li a:hover {
       text-align: center;
     }
     .TitleAndImagePyR{
-      margin-top: 20px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .TitleAndImagePyRUnder{
+      margin-top: 10px;
+      margin-bottom: 50px;
       text-align: center;
     }
     .titleBox{
-      display: block;
-      margin-top: 10px; 
-      font-size: 40px;
+      display: block; 
+      font-size: 30px;
     }
     .textoSmall--PyR{
       text-align: center;
-      margin-top: 30px;
-      font-size: 20px;
-      width: 690px;
+      margin-top: 20px;
+      font-size: 17px;
+      width: 650px;
       height: 240px;
     }
     .textoSmall--PyR a{
@@ -776,6 +913,143 @@ footer div li a:hover {
     grid-row: 6/7;
   }
   /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
+    /*--------------------------------------------------------------------------------comienza pagina postresyrecetas--------------------------------------------------------------------------------------------------------------*/
+    .contenedorPostresyRecetas{
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 400px 1300px 1300px 1400px 450px;
+    }
+  .receta1{
+    grid-column: 1/2;
+    grid-row: 3/4;  
+  }
+  .receta2{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .receta3{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .flexcontainer{
+    background-color:#D5A6BD;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+  .imageAndTitle{
+  margin-top: 50px;
+  }
+  .imageTorta{
+    width: 400px;
+    height: 250px;
+    border: 5px grey groove;
+    display: inline-block;
+  }
+  .titleTorta{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    font-size: 30px;
+  }
+  .titleTorta--brownie{
+    margin-left: 140px;
+  }
+  
+  .ingredientes{
+    margin-top: 50px;
+    border: 5px groove black;
+    background-color:#A64D79;
+    display: inline-block;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
+  .titleIng{
+    font-family:'Indie Flower', cursive;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .listIng{
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+  .preparacion{
+    display: inline-block;
+    width: 500px;
+    margin-top: 50px;
+  }
+  .titlePre{
+  font-family:'Indie Flower', cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+  }
+  
+  .listPre {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 20px;
+  }
+  .foo-postresyRecetas{
+    grid-column: 1fr;
+    grid-row: 6/7;
+  }
+  /*------------------------------------------------termina pagina postresyrecetas--------------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------COMIENZA PAGINA CONTACTO---------------------------------------------------------------------*/
+    .contenedorContacto{
+      grid-template-rows:100px 300px 500px 500px;
+      grid-template-columns: 1fr; 
+    }
+    .formularioContacto{
+      grid-row: 3/4;
+      grid-column: 1fr; 
+    }
+    .border--contact{
+      border-bottom: 0px;
+    }
+    .formularioContacto{
+      text-align: center;
+      justify-content: center;
+    }
+    .formularioContacto input{
+      background-color: #D5A6BD;
+      color: black;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-family: 'Cormorant Garamond', serif;
+      height: 40px;
+      width: 200px;
+      margin-top: 10px;
+    }
+    .formularioContacto textarea{
+      background-color: #D5A6BD;
+      color: black;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-family: 'Cormorant Garamond', serif;
+      margin-top: 10px;
+      width: 200px;
+      height: 150px;
+    }
+    .foo--contacto{
+      grid-row: 4/5;
+      grid-column: 1fr;
+    }
+    /*-----------------------------------------------TERMINA PAGINA CONTACTO---------------------------------------------------------------------*/
 }
 /*----------------------Media 704px a 1199px--------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:704px) and (max-width:1199px) {
@@ -877,11 +1151,11 @@ footer div li a:hover {
   .listfoo--contact{
     margin: 20px 20px 20px 8px;
   }
-    
+
   .listfoo--redes{
     margin: 20px 2px 20px 55px;
  }
-    
+
   .listfoo--ayuda{
     margin: 20px 0px 20px 0px;
   }
@@ -916,6 +1190,10 @@ footer div li a:hover {
     justify-content: space-around;
   }
   .TitleAndImagePyR{
+    margin-top: 100px;
+    text-align: center;
+  }
+  .TitleAndImagePyRUnder{
     margin-top: 100px;
     text-align: center;
   }
@@ -988,6 +1266,143 @@ footer div li a:hover {
   grid-row: 6/7;
 }
 /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------------------comienza pagina postresyrecetas--------------------------------------------------------------------------------------------------------------*/
+  .contenedorPostresyRecetas{
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 400px 1100px 1100px 1100px 300px;
+  }
+.receta1{
+  grid-column: 1/2;
+  grid-row: 3/4;  
+}
+.receta2{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.receta3{
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.flexcontainer{
+  background-color:#D5A6BD;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+.imageAndTitle{
+margin-top: 100px;
+}
+.imageTorta{
+  width: 400px;
+  height: 250px;
+  border: 5px grey groove;
+  display: inline-block;
+}
+.titleTorta{
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  font-size: 30px;
+}
+.titleTorta--brownie{
+  margin-left: 140px;
+}
+
+.ingredientes{
+  margin-top: 150px;
+  border: 5px groove black;
+  background-color:#A64D79;
+  display: inline-block;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.titleIng{
+  font-family:'Indie Flower', cursive;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.listIng{
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  margin-top: 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 30px;
+}
+.preparacion{
+  display: inline-block;
+  width: 500px;
+  margin-top: 0px;
+}
+.titlePre{
+font-family:'Indie Flower', cursive;
+font-size: 30px;
+text-align: center;
+margin-bottom: 25px;
+}
+
+.listPre {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 20px;
+}
+.foo-postresyRecetas{
+  grid-column: 1fr;
+  grid-row: 6/7;
+}
+/*------------------------------------------------termina pagina postresyrecetas--------------------------------------------------------------------------------------------------------------------*/
+  /*-----------------------------------------------COMIENZA PAGINA CONTACTO---------------------------------------------------------------------*/
+  .contenedorContacto{
+    grid-template-rows:100px 300px 500px 300px;
+    grid-template-columns: 1fr; 
+  }
+  .formularioContacto{
+    grid-row: 3/4;
+    grid-column: 1fr; 
+  }
+  .border--contact{
+    border-bottom: 0px;
+  }
+  .formularioContacto{
+    text-align: center;
+    justify-content: center;
+  }
+  .formularioContacto input{
+    background-color: #D5A6BD;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+  }
+  .formularioContacto textarea{
+    background-color: #D5A6BD;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 10px;
+    width: 200px;
+    height: 150px;
+  }
+  .foo--contacto{
+    grid-row: 4/5;
+    grid-column: 1fr;
+  }
+  /*-----------------------------------------------TERMINA PAGINA CONTACTO---------------------------------------------------------------------*/
 }
 /*----------------------Media 1200px--------------------------------------------------------------------------------------------------------*/
   /*-----------------------------------------------------------COMIENZA PAGINA INICIO------------------------------------------------------------*/
@@ -1051,13 +1466,11 @@ footer div li a:hover {
     margin-top: 40px;
     margin-bottom: 10px;
   }
-  .imagenes{
-    margin-top: 75px;
-  }
   .image {
-    height: 185px;
+    height: 250px;
     width: auto;
-    margin: 0px 5px 0px 5px;
+    margin-top: 40px;
+    margin-left: 140px;
   }
   /*termina articulo galeria*/
   /*termina articles de arriba*/
@@ -1122,11 +1535,11 @@ footer div li a:hover {
   .listfoo--contact{
     margin: 20px 20px 20px 8px;
   }
-    
+
   .listfoo--redes{
     margin: 20px 2px 20px 55px;
  }
-    
+
   .listfoo--ayuda{
     margin: 20px 0px 20px 0px;
   }
@@ -1163,6 +1576,10 @@ footer div li a:hover {
   .TitleAndImagePyR{
     text-align: center;
   }
+  .TitleAndImagePyRUnder{
+    margin-top: 100px;
+    text-align: center;
+  }
   .titleBox{
     display: block;
     margin-top: 20px;
@@ -1170,7 +1587,7 @@ footer div li a:hover {
   .textoSmall--PyR{
     text-align: center;
     margin-top: 100px;
-    font-size: 26px;
+    font-size: 20px;
     width: 600px;
   }
   .textoSmall--PyR a{
@@ -1230,6 +1647,141 @@ footer div li a:hover {
   grid-row: 6/7;
 }
 /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------------------comienza pagina postresyrecetas--------------------------------------------------------------------------------------------------------------*/
+  .contenedorPostresyRecetas{
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 400px 650px 650px 650px 300px;
+  }
+.receta1{
+  grid-column: 1/2;
+  grid-row: 3/4;  
+}
+.receta2{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.receta3{
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.flexcontainer{
+  background-color:#D5A6BD;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+.imageAndTitle{
+margin-top: 100px;
+}
+.imageTorta{
+  width: 400px;
+  height: 250px;
+  border: 5px grey groove;
+  display: inline-block;
+}
+.titleTorta{
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  font-size: 30px;
+}
+.titleTorta--brownie{
+  margin-left: 140px;
+}
+
+.ingredientes{
+  margin-top: 150px;
+  border: 5px groove black;
+  background-color:#A64D79;
+  display: inline-block;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.titleIng{
+  font-family:'Indie Flower', cursive;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.listIng{
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  margin-top: 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 30px;
+}
+.preparacion{
+  display: inline-block;
+  width: 500px;
+  margin-top: 80px;
+}
+.titlePre{
+font-family:'Indie Flower', cursive;
+font-size: 30px;
+text-align: center;
+margin-bottom: 25px;
+}
+
+.listPre {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 20px;
+}
+.foo-postresyRecetas{
+  grid-column: 1fr;
+  grid-row: 6/7;
+}
+/*------------------------------------------------termina pagina postresyrecetas--------------------------------------------------------------------------------------------------------------------*/
+  /*-----------------------------------------------COMIENZA PAGINA CONTACTO---------------------------------------------------------------------*/
+  .contenedorContacto{
+    grid-template-rows:100px 300px 500px 300px;
+    grid-template-columns: 1fr; 
+  }
+  .formularioContacto{
+    grid-row: 3/4;
+    grid-column: 1fr; 
+  }
+  .border--contact{
+    border-bottom: 0px;
+  }
+  .formularioContacto{
+    text-align: center;
+    justify-content: center;
+  }
+  .formularioContacto input{
+    background-color: #D5A6BD;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    height: 40px;
+    width: 200px;
+  }
+  .formularioContacto textarea{
+    background-color: #D5A6BD;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    width: 200px;
+    height: 150px;
+  }
+  .foo--contacto{
+    grid-row: 4/5;
+    grid-column: 1fr;
+  }
+  /*-----------------------------------------------TERMINA PAGINA CONTACTO---------------------------------------------------------------------*/
 }
 /*----------------------------------MEDIA 1451PX A 1888PX------------------------------------------------------------------------------------*/
 @media only screen and (min-width:1451px) and (max-width:1888px) {
@@ -1244,15 +1796,7 @@ footer div li a:hover {
     grid-row: 1/2;
   }
   .title{
-    margin: 2px 40px 2px 40px ;
-    font-size: 65px;
-  }
-  .navegacion{
-    padding: 5px 5px;
-    margin: 30px 100px 29px 0px;
-  }
-  .linav{
-    padding: 1px 17px 1px 17px;
+    font-size: 50px;
   }
   /*termina nav*/
   /*comienza logo*/
@@ -1293,9 +1837,10 @@ footer div li a:hover {
     margin-bottom: 10px;
   }
   .image {
-    height: 220px;
+    height: 300px;
     width: auto; 
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: 190px;
   }
   /*termina articles de arriba*/  
   .postresyRecetas{
@@ -1349,11 +1894,11 @@ strong {
 .listfoo--contact{
   margin: 20px 20px 20px 8px;
 }
-  
+
 .listfoo--redes{
   margin: 20px 2px 20px 55px;
 }
-  
+
 .listfoo--ayuda{
   margin: 20px 0px 20px 0px;
 }
@@ -1364,10 +1909,15 @@ strong {
     grid-template-rows:100px 400px 500px 500px 400px 300px;
     grid-template-columns: 1fr;
   }
+  /*comienza nav*/
   .navegador{
     grid-column: 1fr;
     grid-row: 1/2;
   }
+  .title{
+    font-size: 40px;
+  }
+  /*termina nav*/
   /*comienza titulo de la pagina*/
   .tituloPags{
     grid-column: 1fr;
@@ -1397,8 +1947,8 @@ strong {
   .textoSmall--PyR{
     text-align: center;
     margin-top: 100px;
-    font-size: 26px;
-    width: 700px;
+    font-size: 22px;
+    width: 800px;
   }
   .textoSmall--PyR a{
     color: #A64D79;
@@ -1459,6 +2009,141 @@ strong {
 }
 /*termina foo*/
 /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------------------comienza pagina postresyrecetas--------------------------------------------------------------------------------------------------------------*/
+  .contenedorPostresyRecetas{
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 400px 650px 650px 650px 300px;
+  }
+.receta1{
+  grid-column: 1/2;
+  grid-row: 3/4;  
+}
+.receta2{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.receta3{
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.flexcontainer{
+  background-color:#D5A6BD;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+.imageAndTitle{
+margin-top: 100px;
+}
+.imageTorta{
+  width: 400px;
+  height: 250px;
+  border: 5px grey groove;
+  display: inline-block;
+}
+.titleTorta{
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  font-size: 30px;
+}
+.titleTorta--brownie{
+  margin-left: 140px;
+}
+
+.ingredientes{
+  margin-top: 150px;
+  border: 5px groove black;
+  background-color:#A64D79;
+  display: inline-block;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.titleIng{
+  font-family:'Indie Flower', cursive;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.listIng{
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  margin-top: 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 30px;
+}
+.preparacion{
+  display: inline-block;
+  width: 500px;
+  margin-top: 80px;
+}
+.titlePre{
+font-family:'Indie Flower', cursive;
+font-size: 30px;
+text-align: center;
+margin-bottom: 25px;
+}
+
+.listPre {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 20px;
+}
+.foo-postresyRecetas{
+  grid-column: 1fr;
+  grid-row: 6/7;
+}
+/*------------------------------------------------termina pagina postresyrecetas--------------------------------------------------------------------------------------------------------------------*/
+  /*-----------------------------------------------COMIENZA PAGINA CONTACTO---------------------------------------------------------------------*/
+  .contenedorContacto{
+    grid-template-rows:100px 300px 500px 300px;
+    grid-template-columns: 1fr; 
+  }
+  .formularioContacto{
+    grid-row: 3/4;
+    grid-column: 1fr; 
+  }
+  .border--contact{
+    border-bottom: 0px;
+  }
+  .formularioContacto{
+    text-align: center;
+    justify-content: center;
+  }
+  .formularioContacto input{
+    background-color: #D5A6BD;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    height: 40px;
+    width: 200px;
+  }
+  .formularioContacto textarea{
+    background-color: #D5A6BD;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    width: 200px;
+    height: 150px;
+  }
+  .foo--contacto{
+    grid-row: 4/5;
+    grid-column: 1fr;
+  }
+  /*-----------------------------------------------TERMINA PAGINA CONTACTO---------------------------------------------------------------------*/
 }
 /*---------------------------------------------MEDIA 1889PX---------------------------------------------------------------------------------------*/
 @media only screen and (min-width:1889px) {
@@ -1468,20 +2153,12 @@ strong {
       grid-template-rows: 100px 700px 500px 500px 300px ;
     }
     /*comienza nav*/
-    .navegador{
+    .navbar{
       grid-column: 1/5;
       grid-row: 1/2;
     }
     .title{
-      margin: 2px 40px 2px 40px ;
-      font-size: 65px;
-    }
-    .navegacion{
-      padding: 5px 5px;
-      margin: 30px 100px 29px 0px;
-    }
-    .linav{
-      padding: 1px 17px 1px 17px;
+      font-size: 50px;
     }
     /*termina nav*/
     /*comienza logo*/
@@ -1505,9 +2182,14 @@ strong {
       font-size: 40px;
     }
     .textoSmall{
-      margin: 20px 40px 0px 40px;
+      /*margin: 20px 40px 0px 40px;
       line-height: 30px;
-      font-size: 18px;
+      font-size: 18px;*/
+      line-height: 25px;
+      font-size: 20px;
+      margin-top: 40px;
+      margin-left: 30px;
+      margin-right: 30px;
     }
     /*termina articulo de quienes somos*/
     .galeria{
@@ -1524,7 +2206,8 @@ strong {
     .image {
       height: 275px;
       width: auto;
-      margin-top: 20px;
+      margin-top: 40px;
+      margin-left: 330px;
     }
     /*termina articles de arriba*/  
     .postresyRecetas{
@@ -1578,11 +2261,11 @@ strong {
   .listfoo--contact{
     margin: 20px 20px 20px 8px;
   }
-    
+
   .listfoo--redes{
     margin: 20px 2px 20px 55px;
  }
-    
+
   .listfoo--ayuda{
     margin: 20px 0px 20px 0px;
   }
@@ -1620,10 +2303,13 @@ strong {
     margin-top: 20px;
   }
   .textoSmall--PyR{
+
     text-align: center;
-    margin-top: 100px;
-    font-size: 26px;
-    width: 700px;
+    margin-top: 90px;
+    /*font-size: 24px;*/
+    line-height: 25px;
+    font-size: 20px;
+    width: 600px;
   }
   .textoSmall--PyR a{
     color: #A64D79;
@@ -1682,7 +2368,7 @@ strong {
     grid-row: 6/7;
   }
   /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
-  /*comienza pagina postresyrecetas*/
+  /*--------------------------------------------------------------------------------comienza pagina postresyrecetas--------------------------------------------------------------------------------------------------------------*/
   .contenedorPostresyRecetas{
     grid-template-columns: 1fr;
     grid-template-rows: 100px 400px 650px 650px 650px 300px;
@@ -1727,18 +2413,18 @@ margin-top: 80px;
 }
 
 .ingredientes{
-  margin-top: 180px;
+  margin-top: 150px;
   border: 5px groove black;
   background-color:#A64D79;
   display: inline-block;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 .titleIng{
   font-family:'Indie Flower', cursive;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   font-size: 16px;
   color: white;
   letter-spacing: 2px;
@@ -1749,9 +2435,10 @@ margin-top: 80px;
   color: white;
   text-align: center;
   list-style-type: none;
-  margin-top: 30px;
+  margin-top: 40px;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
+  margin-right: 30px;
 }
 .preparacion{
   display: inline-block;
@@ -1766,8 +2453,6 @@ margin-bottom: 25px;
 }
 
 .listPre {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: bold;
   line-height: 25px;
   font-size: 20px;
 }
@@ -1775,7 +2460,32 @@ margin-bottom: 25px;
   grid-column: 1fr;
   grid-row: 6/7;
 }
-/*termina pagina postresyrecetas*/
+/*------------------------------------------------termina pagina postresyrecetas--------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------comienza GALERIA--------------------------------------------------------------------------*/
+.contenedorGaleria{
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 200px 700px 300px;
+}
+
+.tituloGaleria{
+  grid-column: 1fr;
+  grid-row: 2/3;
+}
+.carrusel{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  /*background-color: #D5A6BD;*/
+}
+.imgGaleria{
+  height: 550px;
+  margin-left: 500px;
+  margin-top: 50px;
+}
+.foo--galeria{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+/*----------------------------------------------------------------COMIENZA GALERIA--------------------------------------------------------------------------*/
   /*-----------------------------------------------COMIENZA PAGINA CONTACTO---------------------------------------------------------------------*/
   .contenedorContacto{
     grid-template-rows:100px 300px 500px 300px;
