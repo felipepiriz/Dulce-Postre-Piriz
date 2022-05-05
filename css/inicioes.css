@@ -131,11 +131,41 @@ para trabajar con distitntas resoluciones se utiliza:
 body{
   background-color: #A64D79;
 }
-
-.contenedor{
+.navbar{
+  background-color: #D5A6BD !important;
+}
+.title{
+  color: white !important;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.navChanges{
+  padding-left: 15px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+}
+.logoConteiner{
+  height: 700px;
+}
+.logo{
+  margin-top: 50px;
+  height: 600px;
+}
+.container{
+  height: 500px ;
+  background-color: #D5A6BD;
+}
+.contenedorGaleria{
   display: grid;
 }
-.contenedorQuienesSomos{
+.border{
+  border: 1px solid black !important;
+}
+.titleBox{
+  text-decoration: none;
+  color: black;
+}
+.contenedor{
   display: grid;
 }
 .contenedorContacto{
@@ -144,20 +174,9 @@ body{
 .contenedorPostresyRecetas{
   display: grid;
 }
-.contenedorGaleria{
+.contenedorQuienesSomos{
   display: grid;
 }
-.border{
-  border: 1px solid black !important;
-}
-p{
-  color: black;
-}
-a{
-  text-decoration: none;
-  color: black;
-}
-
 a:hover {
   color: #A64D79;
 }
@@ -172,8 +191,8 @@ a:hover {
 .title{ 
   color: white !important;
   font-family: 'Indie Flower', cursive;
-  font-style: italic;
-  justify-content: flex-start;
+  font-size: 40px;
+  font-weight: 500;
 }
 .navbar li{
   font-weight: bold;
@@ -212,9 +231,18 @@ a:hover {
 
 .quienesSomos p a {
   color: #A64D79;
-  display: inline-block;
 }
-.quienesSomos p a:hover{
+.textoSmall{
+  margin-top: 75px;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+.textoSmall a{
+  color: #A64D79;
+  text-decoration: none;
+}
+.textoSmall a:hover{
   color: white;
 }
 /*termina articulo de quienes somos*/
@@ -229,9 +257,6 @@ a:hover {
 .imgGaleria{
   border: 5px groove grey;
 }
-/*terminan articles arriba*/
-/*termina articulo de galeria*/
-/*comienza articles de abajo*/ 
 /*comienza postres y recetas*/
 .postresyRecetas{
   background-color: #D5A6BD;
@@ -249,20 +274,24 @@ a:hover {
 }
 .imagePyR{
   border: 5px groove grey;
+  height: 250px;
+  width: auto;
+  margin-top: 20px;
+
 }
 .linkReceta{
   display: block;
   padding: 10px 30px 10px 30px;
 	background-color: #A64D79;
   font-family: "Roboto", sans-serif;
-}
-.colorWhite{
-  color: white;
+  text-decoration: none;
 }
 .linkReceta:hover{
   background-color: #6a0c3b;
 }
-
+.colorWhite{
+  color: white;
+}
 /*termina postres y recetas*/
 /*comienza articulo contacto*/
 .contacto{
@@ -274,8 +303,11 @@ a:hover {
 
 form input,form textarea{
   font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
   border: none;
   resize: none; 
+  margin-top: 10px;
+  padding: 5px; 
 }
 form button {
   padding: 10px 30px 10px 30px;
@@ -286,10 +318,15 @@ form button {
 form button:hover{
   background-color: #6a0c3b;
 }
+
 /*termina articulo contacto*/
-/*terminan articles de abajo*/
 /*comienza footer*/
+.containerFoo{
+  height: 300px;
+
+}
 .foo{
+  padding-top: 30px;
   display: flex;
   flex-direction:row;
   justify-content: space-evenly;
@@ -297,10 +334,12 @@ form button:hover{
 
 strong {
   color: white;
+  font-size: 30px;
   font-family: 'Indie Flower', cursive;
 }
 
 .listFoo {
+  margin-top: 20px;
   list-style: none;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
@@ -312,14 +351,17 @@ strong {
 
 footer div li a {
   color: white;
+  text-decoration: none;
 }
 footer div li a:hover {
   color: #D5A6BD;
 }
-
+.fooImage{
+  height: 15px;
+}
 /*termina footer*/
-
-/*------------------------------------Comienza Media------------------------------------------------------------------------------------------*/
+/*
+*------------------------------------Comienza Media------------------------------------------------------------------------------------------*/
 /*----------------------COMIENZA MEDIA DESDE 318PX A  480PX-------------------------------------------------------------------------------*/
 @media only screen and (min-width:318px) and (max-width:480px) {
   .contenedor{
@@ -381,7 +423,7 @@ footer div li a:hover {
   /*termina articulo galeria*/
   /*termina articles de arriba*/
   /*comienza articulos de abajo*/
-  /*comienza articulo postres y recetas*/  
+  /*comienza articulo postres y recetas*/
   .postresyRecetas{
     grid-column: 1/3;
     grid-row: 4/5;
@@ -753,7 +795,7 @@ footer div li a:hover {
   /*termina articulo galeria*/
   /*termina articles de arriba*/
   /*comienza articulos de abajo*/
-  /*comienza articulo postres y recetas*/  
+  /*comienza articulo postres y recetas*/
   .postresyRecetas{
     grid-column: 1/3;
     grid-row: 4/5;
@@ -1068,7 +1110,6 @@ footer div li a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 100px 700px 500px 500px 300px ;
   }
-  /*comienza nav*/
   .navegador{
     grid-column: 1/5;
     grid-row: 1/2;
@@ -1119,7 +1160,7 @@ footer div li a:hover {
   /*termina articulo galeria*/
   /*termina articles de arriba*/
   /*comienza articulos de abajo*/
-  /*comienza articulo postres y recetas*/  
+  /*comienza articulo postres y recetas*/
   .postresyRecetas{
     grid-column: 1/2;
     grid-row: 4/5;
@@ -1135,7 +1176,7 @@ footer div li a:hover {
     margin-left: 97px;
   }
   /*termina articulo postres y recetas*/
-  /*comienza articulo contacto*/
+  /*comienza articulo contacto*
   .contacto{
     display: none;
   }
@@ -1274,6 +1315,8 @@ footer div li a:hover {
 .foo--PyR{
   grid-column: 1fr;
   grid-row: 6/7;
+
+/*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
 }
 /*--------------------------------------------------------------------------------------TERMINA PAGINA SOBRE NOSOSTROS-----------------------------------------------------------------------------------------------------------*/
   /*--------------------------------------------------------------------------------comienza pagina postresyrecetas--------------------------------------------------------------------------------------------------------------*/
@@ -1485,7 +1528,7 @@ margin-bottom: 25px;
   /*termina articulo galeria*/
   /*termina articles de arriba*/
   /*comienza articulos de abajo*/
-  /*comienza articulo postres y recetas*/  
+  /*comienza articulo postres y recetas*/
   .postresyRecetas{
     grid-column: 1/3;
     grid-row: 4/5;
@@ -1852,7 +1895,7 @@ margin-bottom: 25px;
     margin-top: 20px;
     margin-left: 190px;
   }
-  /*termina articles de arriba*/  
+  /*termina articles de arriba*/
   .postresyRecetas{
     grid-column: 1/3;
     grid-row: 4/5;
@@ -1923,17 +1966,11 @@ strong {
   .navegador{
     grid-column: 1fr;
     grid-row: 1/2;
-  }
-  .title{
     font-size: 40px;
   }
   /*termina nav*/
   /*comienza titulo de la pagina*/
   .tituloPags{
-    grid-column: 1fr;
-    grid-row:2/3;
-  }
-  .title--Pag{
     text-align: center;
     padding-top: 170px;
   }
@@ -2157,7 +2194,7 @@ margin-bottom: 25px;
 }
 /*---------------------------------------------MEDIA 1889PX---------------------------------------------------------------------------------------*/
 @media only screen and (min-width:1889px) {
-  /*------------------------COMIENZA PAGINA INICIO------------------------------------------------------------------*/
+  /*-----------------comienza inicio--------------------------------------------------------------*/
     .contenedor{
       grid-template-columns: 2fr 1fr 2fr;
       grid-template-rows: 100px 700px 500px 500px 300px ;
@@ -2192,9 +2229,6 @@ margin-bottom: 25px;
       font-size: 40px;
     }
     .textoSmall{
-      /*margin: 20px 40px 0px 40px;
-      line-height: 30px;
-      font-size: 18px;*/
       line-height: 25px;
       font-size: 20px;
       margin-top: 40px;
@@ -2219,7 +2253,7 @@ margin-bottom: 25px;
       margin-top: 40px;
       margin-left: 330px;
     }
-    /*termina articles de arriba*/  
+    /*termina articles de arriba*/
     .postresyRecetas{
       grid-column: 1/3;
       grid-row: 4/5;
@@ -2313,16 +2347,15 @@ margin-bottom: 25px;
     margin-top: 20px;
   }
   .textoSmall--PyR{
-
-    text-align: center;
-    margin-top: 90px;
-    /*font-size: 24px;*/
     line-height: 25px;
     font-size: 20px;
     width: 600px;
+    margin-top: 130px;
+    text-align: center;
   }
   .textoSmall--PyR a{
     color: #A64D79;
+    text-decoration: none;
   }
   .textoSmall--PyR a:hover{
     color: white;
