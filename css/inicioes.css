@@ -107,6 +107,16 @@ para trabajar con distitntas resoluciones se utiliza:
         nube donde vamos a guardar nuestro codigo, y los commits y versiones.
         git pull: para traer cambios que hicimos en github.
         git push: para enviar los cambios desde VSC a github.
+    BOOTSTRAP
+    sirve para maquetar y es responsive.
+    son 12 filas.
+    dimensione: breakpoints
+        <576 col-xs
+        >576 col-sm
+        >768 col-md
+        >992 col-lg
+        >1200 col-xl
+        >1400 col-xxl
 */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
