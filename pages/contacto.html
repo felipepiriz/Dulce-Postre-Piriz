@@ -14,49 +14,56 @@
 <body>
     <div class="contenedorContacto">
     <!--comienza navegador-->
-    <nav class="navbar navegador navbar-expand-lg navbar-light bg-light col-xxl-12">
-        <div class="container-fluid">
-          <a class="navbar-brand title" href="../index.html">Dulce Postre</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav navChanges">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="quienessomos.html">¿Quienes Somos?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="postresyrecetas.html">Postres & Recetas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navegador navbar-expand-lg navbar-light col-xs-12">
+      <div class="container-fluid">
+        <a class="navbar-brand title" href="index.html">Dulce Postre</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navChanges">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/quienessomos.html">¿Quienes Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/postresyrecetas.html">Postres & Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </nav>
-    <!--termina navegador-->
-    <!--comienza contacto-->
-        <article class="tituloPags  border--contact">
-            <h2 class="title title--Pag"> contacto</h2>
-        </article>
-    <!--termina articulo titulo-->  
-        <article class="formularioContacto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-            <form action="enviar.php" enctype="text/plain" method="post">
-                <input type="text" required name="nombre" placeholder="Nombre"> <br>
-                <input type="email"required name="email" placeholder="Correo Electronico"> <br>
-                <input type="ttext"required name="telefono" placeholder="Telefono"> <br> 
-                <textarea name="Comentarios" required placeholder="Comentario" class="moreHeight"></textarea> <br> <br>
-                <button type="submit" name="enviar" value="ENVIAR" class="buttonContact">ENVIAR</button>
-            </form>
-        </article>
-    <!--termina contacto-->
+      </div>
+  </nav>
+  <!--termina navegador-->
+        <!--comienza articulo contacto-->
+        <article class="col-xs-12 text-center centrarContacto">
+          <h3 class="margintop"><a href="pages/contacto.html" data-aos="fade-down">Contacto</a></h3>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control " id="Nombre" placeholder="Enter name" name="Nombre">
+            <label for="email">Nombre</label>
+          </div>
+          <div class="form-floating mt-3 mb-3">
+            <input type="text" class="form-control " id="Email" placeholder="Enter Email" name="Email">
+            <label for="Email">Email</label>
+          </div>
+          <div class="form-floating mt-3 mb-3">
+            <input type="text" class="form-control " id="Telefono" placeholder="Enter Telefono" name="Telefono">
+            <label for="Telefono">Telefono</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control " id="comment" name="text" placeholder="Comment"></textarea>
+            <label for="comment">Comentario</label>
+          </div>
+          <button type="button" class="btn btn-changes">ENVIAR</button>
+      </article>
+      <!--termina articulo contacto-->
     <!--comienza footer-->
         <footer class="foo foo--contacto ">
             <div class="marginTop" data-aos="fade-down">
