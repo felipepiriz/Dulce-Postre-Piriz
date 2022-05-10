@@ -1,0 +1,231 @@
+@import url("httpsfonts.googleapis.comcss2family=Dosiswght@300&display=swap");
+@import url("httpsfonts.googleapis.comcss2family=Send+Flowers&display=swap");
+@import url("httpsfonts.googleapis.comcss2family=Indie+Flower&display=swap");
+@import url("httpsfonts.googleapis.comcss2family=Cormorant+Garamondwght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #A64D79;
+}
+
+.navbar {
+  background-color: #D5A6BD;
+}
+
+.title {
+  color: white !important;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.navChanges {
+  padding-left: 15px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+}
+
+.logoCentro {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/2488/2488456.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: auto;
+}
+
+.bg-rosa {
+  background-color: #D5A6BD;
+}
+
+.container-fluid--2 {
+  min-height: 475px;
+  margin: 0px;
+  padding: 0px;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Indie Flower", cursive;
+  font-size: 42px;
+}
+
+h3 a:hover {
+  color: #A64D79;
+}
+
+.textChanges {
+  margin-top: 40px;
+  font-size: 17px;
+  font-family: "Cormorant Garamond", cursive;
+  font-weight: bold;
+}
+
+p a {
+  color: #A64D79;
+}
+
+p a:hover {
+  color: #ffffff;
+}
+
+.img-fluid {
+  border: 5px groove grey;
+  max-height: 350px;
+  width: auto;
+}
+
+.centrarCarrusel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nleft {
+  width: 50%;
+}
+
+.nright {
+  width: 50%;
+}
+
+.btn-rosa {
+  background-color: #A64D79;
+  padding: 5px 15px;
+  margin-top: 10px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*comienza footer*/
+.containerFoo {
+  height: 300px;
+}
+
+.foo {
+  height: 300px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+strong {
+  color: white;
+  font-size: 30px;
+  font-family: "Indie Flower", cursive;
+}
+
+.listFoo {
+  margin-top: 20px;
+  list-style: none;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  float: center;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+footer div li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer div li a:hover {
+  color: #D5A6BD;
+}
+
+.fooImage {
+  height: 15px;
+}
+
+.btn-changes {
+  color: black;
+  background-color: #D5A6BD;
+}
+
+.marginTopBox {
+  margin-top: 50px;
+}
+
+.margintop {
+  margin-top: 125px;
+}
+
+/*termina footer*/
+.centrarContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+#comment {
+  width: 208px;
+}
+
+.contacto {
+  padding: 0 !important;
+}
+
+.galeria {
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 550px) {
+  .logoCentro {
+    background-size: 325px;
+  }
+
+  .foo {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+  }
+
+  .galeria {
+    display: none;
+  }
+
+  .contacto {
+    display: none;
+  }
+
+  .imageMedia {
+    margin-left: 5%;
+  }
+
+  .nleft {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nright {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-fluid {
+    height: 150px;
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
