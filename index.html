@@ -16,13 +16,13 @@
 <body>
   <div class="contenedor">
     <!--comienza navegador-->
-    <nav class="navbar navegador navbar-expand-lg navbar-light bg-light col-xxl-12">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand title" href="index.html">Dulce Postre</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class=" row collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navChanges">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
@@ -68,25 +68,25 @@
         <article class="galeria border">
             <h3><a href="pages/galeria.html" class="titleBox" data-aos="fade-down">Galeria</a></h3>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators ">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="multimedia/chocotorta.jpg" class="d-block w-40 image" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="multimedia/tiramisu.jfif" class="d-block w-40 image" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="multimedia/lemonpie2.jpg" class="d-block w-40 image" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="multimedia/tortadefrutilla.jpg" class="d-block w-40 image" alt="...">
-                  </div>                  
+                    <div class="carousel-item active">
+                      <img src="multimedia/chocotorta.jpg" class="d-block w-40 image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="multimedia/tiramisu.jfif" class="d-block w-40 image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="multimedia/lemonpie2.jpg" class="d-block w-40 image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="multimedia/tortadefrutilla.jpg" class="d-block w-40 image" alt="...">                 
+                    </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -96,7 +96,7 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>    
+            </div>    
         </article>
         <!--termina articulo galeria-->
     <!--terminan articilos de arriba-->
@@ -105,11 +105,11 @@
         <article class="postresyRecetas border">
             <h3><a href="pages/postresyrecetas.html" class="titleBox" data-aos="fade-down">Postres & Recetas</a></h3>
             <div class="recetas">
-                <div>
+                <div class="PostresyRecetas-receta">
                     <img src="multimedia/tortadefrutilla.jpg" alt="torta de frutilla" class="imagePyR" data-aos="flip-left">
                     <a href="pages/postresyrecetas.html#tortaDeFrutilla" class="linkReceta"><h4 class="colorWhite"> Receta</h4></a>
                 </div>
-                <div>
+                <div class="PostresyRecetas-receta">
                     <img src="multimedia/brownie.jpg" alt="Brownie de chocolate" class="imagePyR" data-aos="flip-right">
                     <a href="pages/postresyrecetas.html#brownie" class="linkReceta"><h4 class="colorWhite"> Receta</h4></a>
                 </div>
@@ -119,12 +119,12 @@
         <!--comienza articulo contacto-->
         <article class="contacto border">
             <h3><a href="pages/contacto.html" class="titleBox titleBox--Contact" data-aos="fade-down">Contacto</a></h3>
-            <form action="enviar.php" enctype="text/plain" method="post" class="contactForm">
+            <form action="" method="post" name="miformulario" netlify>
                 <input type="text" required name="nombre" placeholder="Nombre"> <br>
                 <input type="email"required name="email" placeholder="Correo Electronico"> <br>
                 <input type="ttext"required name="telefono" placeholder="Telefono"> <br> 
                 <textarea name="Comentarios" required placeholder="Comentario"></textarea> <br> <br>
-                <button type="submit" name="enviar" value="ENVIAR" class="buttonInd">ENVIAR</button>
+                <input type="submit" name="enviar" value="ENVIAR" id="boton1">
             </form>
         </article>
         <!--termina articulo contacto-->
