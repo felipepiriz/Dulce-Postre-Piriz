@@ -11,10 +11,6 @@ body {
   background-color: #A64D79;
 }
 
-.carrusel {
-  text-align: center;
-}
-
 .border {
   border: 1px solid black !important;
 }
@@ -185,6 +181,11 @@ footer div li a:hover {
   list-style-type: none;
 }
 
+h4 {
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 3px;
+}
+
 /*termina pagina quienes somos*/
 /*Comienza PYR*/
 .receta {
@@ -335,10 +336,6 @@ footer div li a:hover {
 
   .marginTop {
     margin-top: 20px;
-  }
-
-  .listfoo {
-    margin: 5px 5px 5px 30px;
   }
 
   /*Termina Footer*/
