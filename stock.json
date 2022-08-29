@@ -1,0 +1,7 @@
+[{"id":1, "nombre": "Banana Split", "cantidad":1, "desc": "Una torta con una base de chocolate, banana y dulce de leche con una crema chantilly por encima, forman esta torta tan clasica, que nunca falla.","precio":2500,"img":"../multimedia/bananasplit.jpg"},
+{"id":2, "nombre": "Chocotorta Boca",  "cantidad":1, "desc": "Galletitas de chocolate, relleno de dulce de leche y queso crema, copos de merengue italiano de color y decorada con chocolates y golosinas.","precio":2000,"img":"../multimedia/bokee.jpg"},
+{"id":3, "nombre": "Lasagna de Chocolate",  "cantidad":1, "desc": "Base de brownie, crema chantilly, dulce de leche natural, merengue italiano y chips de chocolate.", "precio":2300 , "img":"../multimedia/lasagnachocolate.jpg"},
+{"id":4, "nombre": "Torta Oreo",  "cantidad":1, "desc": "Torta Oreo de Dulce de leche, ideal para comer refrigerada o helada ", "precio":2700 , "img":"../multimedia/oreo.jpg"},
+{"id":5, "nombre": "Torta Rogel",  "cantidad":1, "desc": "Sucesivas galletas neutras alternando con abundante dulce de leche y finalmente cubierto por una capa de merengue.","precio":3000,"img":"../multimedia/rogel.jpg"},
+{"id":6, "nombre": "Torta De Frutilla", "cantidad":1, "desc": "Tarta dulce, crema chantilly o pastelera, frutillas y gelatina.","precio":2600,"img":"../multimedia/tortadefrutilla.jpg"}
+]
